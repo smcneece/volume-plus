@@ -1,0 +1,13 @@
+# headset-probe.py output
+probe*.txt
+*.probe.txt
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db

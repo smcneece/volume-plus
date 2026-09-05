@@ -1,0 +1,18 @@
+Copyright (c) 2026 Mega-City Merchandise LLC. All rights reserved.
+
+This repository is the public support site for Volume+, a commercial Stream Deck
+plugin sold on the Elgato Marketplace. It exists for bug reports, feature
+requests, and headset-compatibility work.
+
+The Volume+ plugin itself is a closed-source commercial product and is NOT
+included in this repository.
+
+The documentation, issue templates, images, and other written content in this
+repository are published so users can read and reference them. They may be
+quoted for the purpose of discussing or reporting issues with Volume+. They may
+not be redistributed as a whole or used to promote a different product without
+written permission.
+
+EXCEPTION: the contents of the `tools/` directory are separately licensed under
+the MIT License. See `tools/LICENSE`. You are free to read, modify, and reuse
+those files under those terms.
