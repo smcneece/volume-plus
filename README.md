@@ -9,7 +9,8 @@ software takes over the panel. Every widget can show Caps Lock, Game Mode, and
 wireless headset battery status right on the touch display, all in accent
 colors you pick.
 
-**Get it on the Elgato Marketplace:** _(link goes here once the listing is live)_
+**Get it on the Elgato Marketplace:**
+https://marketplace.elgato.com/product/volume-eb2f8e95-7378-4b9f-9842-d8eefd78cc17
 
 This repository is **support only**: bug reports, feature requests, and headset
 compatibility. The plugin is a closed-source commercial product; there's no

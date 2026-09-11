@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Volume+ on the Elgato Marketplace
-    url: https://marketplace.elgato.com/
-    about: Product page, screenshots, and the current changelog. Replace this URL with the real listing once it's live.
+    url: https://marketplace.elgato.com/product/volume-eb2f8e95-7378-4b9f-9842-d8eefd78cc17
+    about: Product page, screenshots, and the current changelog.
   - name: Help support a headset (CONTRIBUTING.md)
     url: https://github.com/smcneece/volume-plus/blob/main/CONTRIBUTING.md
     about: How to confirm a Beta headset, add a new one, or capture raw HID bytes with tools/headset-probe.py.
