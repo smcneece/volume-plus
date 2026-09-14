@@ -14,7 +14,7 @@ implemented but unverified. To confirm it:
 
 1. Make sure the headset is on and connected via its **USB dongle** (not
    Bluetooth).
-2. In a Volume+ widget's settings, tick **Headset battery badge → Show**.
+2. In a Volume+ widget's settings, check **Headset Battery** in the Badges row.
 3. Note what the settings panel says it detected, and what the badge shows.
 4. Compare the badge % against your headset's real charge (check the vendor
    app once, or your headset's own voice prompt).

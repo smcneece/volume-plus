@@ -8,7 +8,12 @@ Product page: https://marketplace.elgato.com/product/volume-eb2f8e95-7378-4b9f-9
 ## Unreleased
 
 - Performance: less background work while the plugin sits idle. The Game Mode badge no longer re-reads every Stream Deck profile file once a second (it reads one only when it actually changes), the clock stopped rebuilding its date formatter on every redraw, and the Volume and Microphone widgets stop repainting once their picture has settled instead of every half second. Opening a widget's settings no longer briefly stutters either. Lighter on CPU and disk, no change to what you see.
-- Groundwork for Corsair wireless headset battery support, the next headset brand after HyperX.
+- Performance: the headset battery read no longer has any chance of briefly freezing the dial or clock, even in the rare case where a headset stops responding. It always worked, this just removes the last bit of theoretical stutter.
+- Groundwork for Corsair wireless headset battery support, the next headset brand after HyperX. Still waiting on volunteers to confirm it on real hardware.
+- The settings panel is more compact: Caps Lock and Headset Battery are one checkbox row now instead of two, and the Clock's 24-hour and Seconds toggles share a row too.
+- The Clock's Face list is grouped into Digital and Analog now, and the names are shorter since the group already says which kind it is.
+- Fixed the big digital clock face clipping a hair on the edge in plain 24-hour mode (no seconds).
+- New widgets now start on whatever accent color you last picked on any Volume+ widget, instead of always defaulting to blue. Pick purple for Volume, add a Clock, it starts purple too.
 
 ## 1.1.0
 

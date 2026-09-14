@@ -87,8 +87,8 @@ service, and nothing to sign into.
 ## FAQ / Troubleshooting
 
 **The headset badge doesn't appear.**
-Make sure "Headset battery badge → Show" is ticked in the widget's settings,
-the headset is powered on, and it's connected via its USB dongle (not
+Make sure "Headset Battery" is checked in the widget's Badges row, the
+headset is powered on, and it's connected via its USB dongle (not
 Bluetooth). The settings panel will say which headset it detected; if it says
 "none detected", the dongle isn't being seen.
 
