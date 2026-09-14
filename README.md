@@ -16,6 +16,9 @@ This repository is **support only**: bug reports, feature requests, and headset
 compatibility. The plugin is a closed-source commercial product; there's no
 plugin code here.
 
+**[CHANGELOG.md](CHANGELOG.md)** has the full version history and what's in
+progress right now.
+
 ## Widgets
 
 - **Volume**: pick any output device, turn the dial to adjust by a percentage

@@ -90,11 +90,52 @@ reverse-engineering this variant.
 
 ---
 
+## Corsair family — Beta, no hardware confirmed yet
+
+Vendor ID `0x1B1C`. Battery is read with plain output reports, the same kind of
+request/reply as the Arctis (no HID feature reports involved).
+
+Note for the Galleon 100 SD keyboard: that keyboard is also vendor `0x1B1C`
+(product IDs `0x2B0C` and `0x2B18`). The plugin and the probe tool both refuse to
+open those two product IDs, so headset detection can never touch the keyboard's
+own HID.
+
+### Corsair VOID (legacy wireless)
+
+| Field | Value |
+| --- | --- |
+| Product IDs | `0x1B1C` `0x1B27` `0x0A14` `0x0A16` `0x0A17` `0x0A1D` `0x0A1A` `0x1B2A` `0x1B23` `0x1B29` `0x0A55` `0x0A51` `0x0A52` `0x0A38` `0x0A4F` `0x0A2B` `0x0A75` `0x0A56` (one VOID receiver really does use `0x1B1C`) |
+| HID collection | usage page `0xFFC5`, usage `0x01`, interface 3 |
+| Request | output report `C9 64` |
+| Reply | 5 bytes: `[2]` = battery 0–100 (bit 7 is a "mic boom up" flag, mask it off), `[4]` = status: `0` disconnected, `1` normal, `2` low, `4`/`5` charging |
+
+### Corsair Virtuoso XT / SE (Slipstream)
+
+| Field | Value |
+| --- | --- |
+| Product IDs | `0x0A64` XT wireless · `0x0A62` XT wired · `0x0A3E` SE / Slipstream wireless · `0x0A3D` SE wired |
+| HID collection | usage page `0xFF42`, usage `0x01`, interface 3 |
+| Request | output report `02 00` |
+| Reply | 64 bytes, report id `[0] == 0x01`. `[1]` = status (`0xF0` normal, `0x00` offline). `[2]` = battery 0–100 |
+
+### Corsair VOID Wireless V2 / Virtuoso MAX / HS80 MAX
+
+| Field | Value |
+| --- | --- |
+| Product IDs | `0x2A08` VOID Wireless V2 · `0x2A02` Virtuoso MAX Wireless · `0x0A97` HS80 MAX Wireless |
+| HID collection | interface 4 |
+| Wake handshake first | `00 02 08 02 13`, `00 02 08 02 12`, drain reads, `00 02 09 02 12`, then read (empty read means the headset is off) |
+| Battery request | `00 02 09 02 0F` (65-byte write, 64-byte reply) |
+| Reply | battery = `reply[4] | (reply[5] << 8)`, a 1–1000 value, divide by 10 for percent. Retry a few times if it reads 0 or above 1000. |
+
+Cloud 3 and plain wired Corsair headsets have no wireless battery telemetry.
+
+---
+
 ## Not yet implemented
 
 - **SteelSeries Arctis Nova 7** — request `06 18` padded to 64 bytes; battery
   bars 0–4 at `reply[2]`, `reply[3] == 1` means charging.
-- **Corsair** VOID / Virtuoso.
 - **Logitech** G-series / ASTRO A50 — voltage-based with a curve, and a
   structured HID++ handshake. Bigger job; on the roadmap.
 
