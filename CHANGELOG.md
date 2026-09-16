@@ -7,6 +7,8 @@ Product page: https://marketplace.elgato.com/product/volume-eb2f8e95-7378-4b9f-9
 
 ## Unreleased
 
+## 1.2.0
+
 - Performance: less background work while the plugin sits idle. The Game Mode badge no longer re-reads every Stream Deck profile file once a second (it reads one only when it actually changes), the clock stopped rebuilding its date formatter on every redraw, and the Volume and Microphone widgets stop repainting once their picture has settled instead of every half second. Opening a widget's settings no longer briefly stutters either. Lighter on CPU and disk, no change to what you see.
 - Performance: the headset battery read no longer has any chance of briefly freezing the dial or clock, even in the rare case where a headset stops responding. It always worked, this just removes the last bit of theoretical stutter.
 - Groundwork for Corsair wireless headset battery support, the next headset brand after HyperX. Still waiting on volunteers to confirm it on real hardware.
