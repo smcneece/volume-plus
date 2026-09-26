@@ -1,0 +1,170 @@
+{
+	"Name": "Volume+",
+	"Description": "适用于 Stream Deck 触摸屏的音量旋钮、麦克风控制、时钟和计时器，每个都显示大写锁定、游戏模式和无线耳机电量状态徽章。专为内置 Stream Deck 的键盘（如 Corsair Galleon 100 SD）打造的 Volume Controller 替代品，弥补了大写锁定指示灯的缺失。单色主题，十种表盘，包括翻页、7 段、14 段和点阵 LED 风格。仅支持 Windows。",
+	"com.megacity.volumeplus.dial": {
+		"Name": "音量",
+		"Tooltip": "调节输出设备的音量，并在触摸屏上显示大写锁定徽章。",
+		"Encoder": {
+			"TriggerDescription": {
+				"Rotate": "调节音量",
+				"Push": "静音 / 取消静音",
+				"Touch": "静音 / 取消静音"
+			}
+		}
+	},
+	"com.megacity.volumeplus.mic": {
+		"Name": "麦克风",
+		"Tooltip": "调节输入设备的音量，并显示大写锁定和游戏模式徽章。",
+		"Encoder": {
+			"TriggerDescription": {
+				"Rotate": "调节麦克风音量",
+				"Push": "静音 / 取消静音",
+				"Touch": "静音 / 取消静音"
+			}
+		}
+	},
+	"com.megacity.volumeplus.clock": {
+		"Name": "时钟",
+		"Tooltip": "适用于触摸屏的时钟，并显示大写锁定和游戏模式徽章。",
+		"Encoder": {
+			"TriggerDescription": {
+				"Rotate": "切换表盘",
+				"Push": "切换 12 / 24 小时制",
+				"Touch": "切换 12 / 24 小时制"
+			}
+		}
+	},
+	"com.megacity.volumeplus.timer": {
+		"Name": "计时器",
+		"Tooltip": "带闹铃声音的倒计时器，并显示大写锁定和游戏模式徽章。",
+		"Encoder": {
+			"TriggerDescription": {
+				"Rotate": "设置时间",
+				"Push": "开始 / 暂停（长按：重置）",
+				"Touch": "开始 / 暂停",
+				"LongTouch": "重置"
+			}
+		}
+	},
+	"Localization": {
+		"common": {
+			"muted": "已静音",
+			"mutedCaps": "静音",
+			"defaultDevice": "默认设备",
+			"device": "设备",
+			"action": "操作",
+			"stepSize": "步长",
+			"color": "颜色",
+			"refreshRate": "刷新频率",
+			"refreshFast": "快速（0.25 秒）",
+			"refreshNormal": "正常（0.5 秒）",
+			"refreshRelaxed": "较慢（1 秒）",
+			"refreshSaver": "省电（2 秒）",
+			"background": "背景",
+			"none": "无",
+			"transparent": "透明",
+			"solidDark": "纯深色",
+			"backgroundHelp": "选择透明可让按键的背景图片显示出来。",
+			"volume": "音量"
+		},
+		"volume": {
+			"defaultTitle": "音量",
+			"action": "调节输出音量"
+		},
+		"mic": {
+			"defaultTitle": "麦克风",
+			"defaultDevice": "默认麦克风",
+			"action": "调节输入音量"
+		},
+		"timer": {
+			"caption": "计时器",
+			"paused": "已暂停",
+			"timesUp": "时间到！",
+			"duration": "时长",
+			"dialStep": "旋钮步长",
+			"controls": "操作方式",
+			"sound": "声音",
+			"groupAlarms": "Windows 闹钟",
+			"groupRingtones": "Windows 铃声",
+			"file": "文件",
+			"playback": "播放",
+			"repeat": "重复直到关闭",
+			"step5s": "5 秒",
+			"step10s": "10 秒",
+			"step30s": "30 秒",
+			"step1m": "1 分钟",
+			"step5m": "5 分钟",
+			"customFile": "自定义文件…",
+			"durationHelp": "分钟（5）、M:SS 或 H:MM:SS。使用旋钮时，转动即可设置。",
+			"controlsHelp": "按下或轻触以开始和暂停。长按可重置。响铃时再按一次即可关闭。",
+			"fileHelp": "MP3 或 WAV 文件。",
+			"repeatHelp": "重复播放会在一分钟后自动停止。",
+			"preview": "试听",
+			"alarm1": "闹钟 1",
+			"alarm2": "闹钟 2",
+			"alarm3": "闹钟 3",
+			"alarm4": "闹钟 4",
+			"alarm5": "闹钟 5",
+			"alarm6": "闹钟 6",
+			"alarm7": "闹钟 7",
+			"alarm8": "闹钟 8",
+			"alarm9": "闹钟 9",
+			"alarm10": "闹钟 10",
+			"ring1": "铃声 1",
+			"ring2": "铃声 2",
+			"ring3": "铃声 3",
+			"ring4": "铃声 4",
+			"ring5": "铃声 5",
+			"ring6": "铃声 6",
+			"ring7": "铃声 7",
+			"ring8": "铃声 8",
+			"ring9": "铃声 9",
+			"ring10": "铃声 10"
+		},
+		"badges": {
+			"label": "徽章",
+			"capsLock": "大写锁定",
+			"headsetBattery": "耳机电量",
+			"gameMode": "游戏模式",
+			"auto": "自动",
+			"always": "始终",
+			"off": "关闭",
+			"headsetHelp": "显示无线耳机的电量百分比。",
+			"gameModeHelp": "自动：当 Stream Deck 页面上有 Corsair“Game Mode”操作时显示。",
+			"headsetDetected": "已检测到 {name}。"
+		},
+		"clock": {
+			"face": "表盘",
+			"groupDigital": "数字",
+			"groupAnalog": "指针",
+			"format": "格式",
+			"hour24": "24 小时制",
+			"seconds": "秒",
+			"date": "日期",
+			"timeZone": "时区",
+			"timeZonePlaceholder": "本机",
+			"secondHand": "秒针",
+			"cardColor": "卡片颜色",
+			"faceBig": "大字",
+			"faceBigDate": "大字 + 日期",
+			"faceDayRing": "日进度环",
+			"faceFlip": "翻页时钟",
+			"faceSeg7": "7 段",
+			"faceSeg14": "14 段",
+			"faceDotMatrix": "点阵",
+			"faceClassic": "经典",
+			"faceMinimal": "简约",
+			"faceAnalogDigital": "+ 数字",
+			"dateDow": "周一",
+			"dateDowMd": "1月5日周一",
+			"dateMd": "1月5日",
+			"dateMdy": "2026年1月5日",
+			"dateDmy": "2026/01/05",
+			"faceHelp": "使用旋钮时，转动即可切换表盘。",
+			"dateHelp": "用于“大字 + 日期”“14 段”“点阵”和“+ 数字”表盘。",
+			"timeZoneHelp": "IANA 时区名称，例如 America/New_York、Europe/London、Asia/Tokyo、UTC。留空则使用本机时区。使用旋钮时，城市名也会作为标题显示（输入标题可覆盖）。",
+			"secondHandHelp": "适用于开启秒针的指针表盘。设为强调色可获得单色外观。",
+			"cardColorHelp": "翻页时钟的卡片背景色。上方的颜色为数字颜色。"
+		}
+	}
+}

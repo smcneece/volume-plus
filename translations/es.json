@@ -1,0 +1,170 @@
+{
+	"Name": "Volume+",
+	"Description": "Un control de volumen, un control de micrófono, un reloj y un temporizador para la pantalla táctil de tu Stream Deck, cada uno con indicadores de Bloq Mayús, Modo de juego y batería de auriculares inalámbricos. Un reemplazo de Volume Controller para teclados con un Stream Deck integrado, como el Corsair Galleon 100 SD, donde se pierde la luz de Bloq Mayús. Tema de un solo color y diez esferas de reloj, incluidos los estilos de tarjetas abatibles, LED de 7 y 14 segmentos y matriz de puntos. Solo para Windows.",
+	"com.megacity.volumeplus.dial": {
+		"Name": "Volumen",
+		"Tooltip": "Ajusta el volumen de un dispositivo de salida, con un indicador de Bloq Mayús en la pantalla táctil.",
+		"Encoder": {
+			"TriggerDescription": {
+				"Rotate": "Ajustar volumen",
+				"Push": "Silenciar / activar sonido",
+				"Touch": "Silenciar / activar sonido"
+			}
+		}
+	},
+	"com.megacity.volumeplus.mic": {
+		"Name": "Micrófono",
+		"Tooltip": "Ajusta el volumen de un dispositivo de entrada, con indicadores de Bloq Mayús y Modo de juego.",
+		"Encoder": {
+			"TriggerDescription": {
+				"Rotate": "Ajustar volumen del micrófono",
+				"Push": "Silenciar / activar sonido",
+				"Touch": "Silenciar / activar sonido"
+			}
+		}
+	},
+	"com.megacity.volumeplus.clock": {
+		"Name": "Reloj",
+		"Tooltip": "Un reloj para la pantalla táctil, con indicadores de Bloq Mayús y Modo de juego.",
+		"Encoder": {
+			"TriggerDescription": {
+				"Rotate": "Cambiar esfera",
+				"Push": "Alternar 12 / 24 horas",
+				"Touch": "Alternar 12 / 24 horas"
+			}
+		}
+	},
+	"com.megacity.volumeplus.timer": {
+		"Name": "Temporizador",
+		"Tooltip": "Un temporizador con alarma sonora, con indicadores de Bloq Mayús y Modo de juego.",
+		"Encoder": {
+			"TriggerDescription": {
+				"Rotate": "Ajustar tiempo",
+				"Push": "Iniciar / pausar (mantener: reiniciar)",
+				"Touch": "Iniciar / pausar",
+				"LongTouch": "Reiniciar"
+			}
+		}
+	},
+	"Localization": {
+		"common": {
+			"muted": "Silenciado",
+			"mutedCaps": "SILENCIO",
+			"defaultDevice": "Dispositivo predeterminado",
+			"device": "Dispositivo",
+			"action": "Acción",
+			"stepSize": "Tamaño del paso",
+			"color": "Color",
+			"refreshRate": "Actualización",
+			"refreshFast": "Rápida (0,25 s)",
+			"refreshNormal": "Normal (0,5 s)",
+			"refreshRelaxed": "Relajada (1 s)",
+			"refreshSaver": "Ahorro de batería (2 s)",
+			"background": "Fondo",
+			"none": "Ninguno",
+			"transparent": "Transparente",
+			"solidDark": "Oscuro sólido",
+			"backgroundHelp": "Transparente deja ver la imagen de fondo de la tecla.",
+			"volume": "Volumen"
+		},
+		"volume": {
+			"defaultTitle": "Volumen",
+			"action": "Ajustar volumen de salida"
+		},
+		"mic": {
+			"defaultTitle": "Micrófono",
+			"defaultDevice": "Micrófono predeterminado",
+			"action": "Ajustar volumen de entrada"
+		},
+		"timer": {
+			"caption": "Temporizador",
+			"paused": "En pausa",
+			"timesUp": "¡Tiempo!",
+			"duration": "Duración",
+			"dialStep": "Paso del dial",
+			"controls": "Controles",
+			"sound": "Sonido",
+			"groupAlarms": "Alarmas de Windows",
+			"groupRingtones": "Tonos de Windows",
+			"file": "Archivo",
+			"playback": "Reproducción",
+			"repeat": "Repetir hasta descartar",
+			"step5s": "5 segundos",
+			"step10s": "10 segundos",
+			"step30s": "30 segundos",
+			"step1m": "1 minuto",
+			"step5m": "5 minutos",
+			"customFile": "Tu propio archivo…",
+			"durationHelp": "Minutos (5), M:SS o H:MM:SS. En un dial, gíralo para ajustarlo.",
+			"controlsHelp": "Pulsa o toca para iniciar y pausar. Mantén pulsado para reiniciar. Cuando suene, pulsa de nuevo para descartarlo.",
+			"fileHelp": "Un archivo MP3 o WAV.",
+			"repeatHelp": "Las repeticiones se detienen solas después de un minuto.",
+			"preview": "Probar",
+			"alarm1": "Alarma 1",
+			"alarm2": "Alarma 2",
+			"alarm3": "Alarma 3",
+			"alarm4": "Alarma 4",
+			"alarm5": "Alarma 5",
+			"alarm6": "Alarma 6",
+			"alarm7": "Alarma 7",
+			"alarm8": "Alarma 8",
+			"alarm9": "Alarma 9",
+			"alarm10": "Alarma 10",
+			"ring1": "Tono 1",
+			"ring2": "Tono 2",
+			"ring3": "Tono 3",
+			"ring4": "Tono 4",
+			"ring5": "Tono 5",
+			"ring6": "Tono 6",
+			"ring7": "Tono 7",
+			"ring8": "Tono 8",
+			"ring9": "Tono 9",
+			"ring10": "Tono 10"
+		},
+		"badges": {
+			"label": "Indicadores",
+			"capsLock": "Bloq Mayús",
+			"headsetBattery": "Batería de auriculares",
+			"gameMode": "Modo de juego",
+			"auto": "Automático",
+			"always": "Siempre",
+			"off": "Desactivado",
+			"headsetHelp": "Muestra el % de carga de unos auriculares inalámbricos.",
+			"gameModeHelp": "En Automático se muestra cuando hay una acción «Game Mode» de Corsair en una página de Stream Deck.",
+			"headsetDetected": "Se detectó {name}."
+		},
+		"clock": {
+			"face": "Esfera",
+			"groupDigital": "Digital",
+			"groupAnalog": "Analógico",
+			"format": "Formato",
+			"hour24": "24 horas",
+			"seconds": "Segundos",
+			"date": "Fecha",
+			"timeZone": "Zona horaria",
+			"timeZonePlaceholder": "Este equipo",
+			"secondHand": "Segundero",
+			"cardColor": "Color de tarjeta",
+			"faceBig": "Grande",
+			"faceBigDate": "Grande + fecha",
+			"faceDayRing": "Anillo del día",
+			"faceFlip": "Tarjetas abatibles",
+			"faceSeg7": "7 segmentos",
+			"faceSeg14": "14 segmentos",
+			"faceDotMatrix": "Matriz de puntos",
+			"faceClassic": "Clásico",
+			"faceMinimal": "Minimalista",
+			"faceAnalogDigital": "+ digital",
+			"dateDow": "lun",
+			"dateDowMd": "lun, 5 ene",
+			"dateMd": "5 ene",
+			"dateMdy": "5 ene 2026",
+			"dateDmy": "05/01/2026",
+			"faceHelp": "En un dial, gíralo para cambiar la esfera.",
+			"dateHelp": "La usan las esferas «Grande + fecha», «14 segmentos», «Matriz de puntos» y «+ digital».",
+			"timeZoneHelp": "Un nombre IANA: America/New_York, Europe/London, Asia/Tokyo, UTC. Si lo dejas vacío, se usa la zona de este equipo. En un dial, la ciudad también aparece como leyenda (escribe un Título para cambiarla).",
+			"secondHandHelp": "Esferas analógicas con los segundos activados. Usa tu color de acento para un aspecto de un solo color.",
+			"cardColorHelp": "El fondo de las tarjetas de la esfera abatible. El color de arriba es el de los dígitos."
+		}
+	}
+}

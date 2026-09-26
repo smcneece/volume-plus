@@ -23,11 +23,13 @@ progress right now.
 
 - **Volume**: pick any output device, turn the dial to adjust by a percentage
   step you set, press or tap to mute. Works on a plain key too.
+- **Microphone**: the same control for an input device. Turn to set your mic
+  level, press or tap to mute.
 - **Clock**: several faces (big digital, digital + date, analog, minimal
   analog, analog + digital, day-progress ring, flip clock). 12/24-hour,
   seconds, date formats, any time zone, transparent or solid background.
 
-Both widgets can show up to three status badges:
+Every widget can show up to three status badges:
 
 - **Caps Lock**: read the same way any Windows app reads keyboard state.
 - **Game Mode**: reflects a Corsair "Game Mode" Stream Deck action's on/off
@@ -35,8 +37,9 @@ Both widgets can show up to three status badges:
 - **Headset battery**: a wireless headset's charge %, over raw HID, no vendor
   software. See the table below.
 
-More widgets (Microphone, Timer, Date, and others) are on the roadmap. The
-Marketplace listing is the source of truth for what's shipping right now.
+More widgets are on the way; the Unreleased section of
+[CHANGELOG.md](CHANGELOG.md) shows what's coming next. The Marketplace listing
+is the source of truth for what's shipping right now.
 
 ## Headset battery: supported devices
 
@@ -104,12 +107,20 @@ is on. No Corsair action, no badge.
 
 **Does it work on a regular Stream Deck / Stream Deck + / MK.2 / XL / Neo?**
 Yes. The dial interactions use an encoder where one exists; on plain keys the
-same widgets render as a key image. Volume and the Caps Lock badge are
-Windows-only for now.
+same widgets render as a key image. Volume+ itself is Windows-only for now
+(see below).
 
 **macOS?**
-Planned. The Clock and Game Mode badge already run cross-platform; Volume and
-Caps Lock need a Mac backend.
+Planned, as a free update. Much of the plugin is already written to be
+cross-platform, but the volume, microphone, and Caps Lock parts need Mac
+versions before it can be offered on macOS.
+
+## Languages
+
+Volume+ is English today and set up for all eight languages Stream Deck
+supports. Spanish and Chinese drafts need a native speaker's review, and
+German, French, Japanese, and Korean are wanted. No coding needed: see
+[translations/](translations/).
 
 ## Reporting an issue
 

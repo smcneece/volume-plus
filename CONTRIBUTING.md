@@ -66,3 +66,10 @@ The request bytes and reply offsets it uses are written up in
   code** into issues, a link is fine.
 - Anything newly worked out here that isn't already in HeadsetControl, we aim to
   contribute upstream to them.
+
+# Helping with translations
+
+Volume+ is set up for Stream Deck's eight languages, and Spanish and Chinese
+drafts are waiting for a native speaker's review. Each language is one JSON
+file; no coding needed. Start with
+[translations/README.md](translations/README.md).

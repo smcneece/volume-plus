@@ -1,0 +1,170 @@
+{
+	"Name": "Volume+",
+	"Description": "A volume dial, a microphone control, a clock, and a timer for your Stream Deck touch display, each showing Caps Lock, Game Mode, and wireless headset battery status badges. A Volume Controller replacement for keyboards with a built-in Stream Deck, like the Corsair Galleon 100 SD, where the Caps Lock light is gone. Single-color theming and ten clock faces, including flip-clock, 7-segment, 14-segment, and dot-matrix LED styles. Windows only.",
+	"com.megacity.volumeplus.dial": {
+		"Name": "Volume",
+		"Tooltip": "Adjust an output device's volume, with a Caps Lock badge on the touch display.",
+		"Encoder": {
+			"TriggerDescription": {
+				"Rotate": "Adjust volume",
+				"Push": "Mute / unmute",
+				"Touch": "Mute / unmute"
+			}
+		}
+	},
+	"com.megacity.volumeplus.mic": {
+		"Name": "Microphone",
+		"Tooltip": "Adjust an input device's volume, with Caps Lock and Game Mode badges.",
+		"Encoder": {
+			"TriggerDescription": {
+				"Rotate": "Adjust mic volume",
+				"Push": "Mute / unmute",
+				"Touch": "Mute / unmute"
+			}
+		}
+	},
+	"com.megacity.volumeplus.clock": {
+		"Name": "Clock",
+		"Tooltip": "A clock for the touch display, with Caps Lock and Game Mode badges.",
+		"Encoder": {
+			"TriggerDescription": {
+				"Rotate": "Change clock face",
+				"Push": "Toggle 12 / 24-hour",
+				"Touch": "Toggle 12 / 24-hour"
+			}
+		}
+	},
+	"com.megacity.volumeplus.timer": {
+		"Name": "Timer",
+		"Tooltip": "A countdown timer with an alarm sound, with Caps Lock and Game Mode badges.",
+		"Encoder": {
+			"TriggerDescription": {
+				"Rotate": "Set time",
+				"Push": "Start / pause (hold: reset)",
+				"Touch": "Start / pause",
+				"LongTouch": "Reset"
+			}
+		}
+	},
+	"Localization": {
+		"common": {
+			"muted": "Muted",
+			"mutedCaps": "MUTED",
+			"defaultDevice": "Default Device",
+			"device": "Device",
+			"action": "Action",
+			"stepSize": "Step Size",
+			"color": "Color",
+			"refreshRate": "Refresh Rate",
+			"refreshFast": "Fast (0.25s)",
+			"refreshNormal": "Normal (0.5s)",
+			"refreshRelaxed": "Relaxed (1s)",
+			"refreshSaver": "Battery saver (2s)",
+			"background": "Background",
+			"none": "None",
+			"transparent": "Transparent",
+			"solidDark": "Solid dark",
+			"backgroundHelp": "Transparent lets a key background image show through.",
+			"volume": "Volume"
+		},
+		"volume": {
+			"defaultTitle": "Volume",
+			"action": "Adjust Output Volume"
+		},
+		"mic": {
+			"defaultTitle": "Microphone",
+			"defaultDevice": "Default Microphone",
+			"action": "Adjust Input Volume"
+		},
+		"timer": {
+			"caption": "Timer",
+			"paused": "Paused",
+			"timesUp": "Time's up!",
+			"duration": "Duration",
+			"dialStep": "Dial step",
+			"controls": "Controls",
+			"sound": "Sound",
+			"groupAlarms": "Windows alarms",
+			"groupRingtones": "Windows ringtones",
+			"file": "File",
+			"playback": "Playback",
+			"repeat": "Repeat until dismissed",
+			"step5s": "5 seconds",
+			"step10s": "10 seconds",
+			"step30s": "30 seconds",
+			"step1m": "1 minute",
+			"step5m": "5 minutes",
+			"alarm1": "Alarm 1",
+			"alarm2": "Alarm 2",
+			"alarm3": "Alarm 3",
+			"alarm4": "Alarm 4",
+			"alarm5": "Alarm 5",
+			"alarm6": "Alarm 6",
+			"alarm7": "Alarm 7",
+			"alarm8": "Alarm 8",
+			"alarm9": "Alarm 9",
+			"alarm10": "Alarm 10",
+			"ring1": "Ring 1",
+			"ring2": "Ring 2",
+			"ring3": "Ring 3",
+			"ring4": "Ring 4",
+			"ring5": "Ring 5",
+			"ring6": "Ring 6",
+			"ring7": "Ring 7",
+			"ring8": "Ring 8",
+			"ring9": "Ring 9",
+			"ring10": "Ring 10",
+			"customFile": "Your own file…",
+			"durationHelp": "Minutes (5), M:SS or H:MM:SS. On a dial, turn the knob to set it.",
+			"controlsHelp": "Press or tap to start and pause. Hold to reset. Press again when it rings to dismiss.",
+			"fileHelp": "An MP3 or WAV file.",
+			"repeatHelp": "Repeats stop on their own after a minute.",
+			"preview": "Preview"
+		},
+		"badges": {
+			"label": "Badges",
+			"capsLock": "Caps Lock",
+			"headsetBattery": "Headset Battery",
+			"gameMode": "Game Mode",
+			"auto": "Auto",
+			"always": "Always",
+			"off": "Off",
+			"headsetHelp": "Shows a wireless headset's charge %.",
+			"gameModeHelp": "Auto shows it when a Corsair “Game Mode” action is on a Stream Deck page.",
+			"headsetDetected": "{name} detected."
+		},
+		"clock": {
+			"face": "Face",
+			"groupDigital": "Digital",
+			"groupAnalog": "Analog",
+			"format": "Format",
+			"hour24": "24-hour",
+			"seconds": "Seconds",
+			"date": "Date",
+			"timeZone": "Time zone",
+			"timeZonePlaceholder": "This computer",
+			"secondHand": "Second hand",
+			"cardColor": "Card color",
+			"faceBig": "Big",
+			"faceBigDate": "Big + date",
+			"faceDayRing": "Day ring",
+			"faceFlip": "Flip clock",
+			"faceSeg7": "7-segment",
+			"faceSeg14": "14-segment",
+			"faceDotMatrix": "Dot matrix",
+			"faceClassic": "Classic",
+			"faceMinimal": "Minimal",
+			"faceAnalogDigital": "+ digital",
+			"dateDow": "Mon",
+			"dateDowMd": "Mon Jan 5",
+			"dateMd": "Jan 5",
+			"dateMdy": "Jan 5, 2026",
+			"dateDmy": "5 Jan 2026",
+			"faceHelp": "On a dial, turn the knob to change the face.",
+			"dateHelp": "Used by the \"Big + date\", \"14-segment\", \"Dot matrix\" and \"+ digital\" faces.",
+			"timeZoneHelp": "An IANA name — America/New_York, Europe/London, Asia/Tokyo, UTC. Blank uses this computer's zone. On a dial the city also shows as a caption (type a Title to override it).",
+			"secondHandHelp": "Analog faces with seconds on. Set it to your accent for a one-color look.",
+			"cardColorHelp": "The flip-clock face's card background. Color above is the digit color."
+		}
+	}
+}

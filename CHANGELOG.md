@@ -7,6 +7,12 @@ Product page: https://marketplace.elgato.com/product/volume-eb2f8e95-7378-4b9f-9
 
 ## Unreleased
 
+- New widget: **Timer**. Turn the dial to set the time, press or tap to start and pause, hold to reset. When it runs out the display flashes and an alarm plays: pick one of the Windows alarm or ringtone sounds, or your own MP3 or WAV file, with its own volume and a Preview button. It keeps counting (and rings) while you are on another Stream Deck page.
+- New clock faces: **7-segment**, **14-segment**, and **Dot matrix**, lit-LED displays where the unlit segments stay visible as a faint ghost in your accent color. All three show seconds and an AM/PM indicator, and the 14-segment and dot-matrix faces add a date line spelled out in letters ("FRI SEP 5") that follows your Date setting.
+- Groundwork for other languages. Every widget name, setting, and on-screen word now comes from a per-language file, and the Clock writes dates the way your Stream Deck language does. Settings and labels are still English in this release: Spanish and Chinese drafts are in the repo waiting for native speakers to review them, and German, French, Japanese, and Korean are wanted. See [translations](https://github.com/smcneece/volume-plus/tree/main/translations).
+- The Timer's dial hints now show "Long touch: Reset" in Stream Deck.
+- Fixed a Clock or Timer title containing "&" or "<" (like "Tom & Jerry") leaving the widget blank.
+
 ## 1.2.0
 
 - Performance: less background work while the plugin sits idle. The Game Mode badge no longer re-reads every Stream Deck profile file once a second (it reads one only when it actually changes), the clock stopped rebuilding its date formatter on every redraw, and the Volume and Microphone widgets stop repainting once their picture has settled instead of every half second. Opening a widget's settings no longer briefly stutters either. Lighter on CPU and disk, no change to what you see.
